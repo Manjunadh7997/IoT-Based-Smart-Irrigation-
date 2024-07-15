@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Smart Irrigation System</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
+        <link href="static/assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/assets/css/bootstrap-icons.css" rel="stylesheet">
+        <link href="static/assets/css/vegas.min.css" rel="stylesheet">
+        <link href="static/assets/css/tooplate-barista.css" rel="stylesheet">
+    </head>
+    
+    <body class="reservation-page">
+        <main>
+            <nav class="navbar navbar-expand-lg">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="">
+                        <img src="images/coffee-beans.png" class="navbar-brand-image img-fluid" alt="">
+                        Smart Irrigation
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="booking-section section-padding">
+                <div class="container">
+                    <div class="row">
+                        <br><br>
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div class="back_form">
+                                <div class="row">
+                                    <form id="Prediction_page" action="/submit" method="POST">                                      
+                                        <div class="form-group">
+                                            <div class="label_form">
+                                                <label for="Temperature">Temperature</label>
+                                            </div>
+                                            <input id="Temperature" name="temperature" type="number" placeholder="Type value of Temperature (0-50)" class="form-control" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="label_form">
+                                                <label for="Humidity">Humidity</label>
+                                            </div>
+                                            <input id="Humidity" name="humidity" type="number" placeholder="Type value of Humidity (0-100)" class="form-control" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="label_form">
+                                                <label for="Water Level">Water Level</label>
+                                            </div>
+                                            <input id="Water Level" name="water_level" type="number" placeholder="Type the level of Water (0-100)" class="form-control" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="label_form">
+                                                <label for="Potassium Level">Potassium Level</label>
+                                            </div>
+                                            <input id="Potassium Level" name="k" type="number" placeholder="Type the level of Potassium (140-255)" class="form-control" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="label_form">
+                                                <label for="Nitrogen Level">Nitrogen Level</label>
+                                            </div>
+                                            <input id="Nitrogen Level" name="N" type="number" placeholder="Type the level of Nitrogen (140-255)" class="form-control" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="label_form">
+                                                <label for="Phosphorous Level">Phosphorous Level</label>
+                                            </div>
+                                            <input id="Phosphorous Level" name="P" type="number" placeholder="Type the level of Phosphorous (0-255)" class="form-control" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="label_form">
+                                                <label for="Watering Plant Pump">Watering Plant Pump</label>
+                                            </div>
+                                            <select id="Watering Plant Pump" name="Watering_plant_pump" class="form-control" required>
+                                                <option value="">Water Pump Plant</option>
+                                                <option value="0">OFF</option>
+                                                <option value="1">ON</option>                                                    
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="label_form">
+                                                <label for="Fan Actuator">Fan Actuator</label>
+                                            </div>
+                                            <select id="Fan Actuator" name="Fan_actuator" class="form-control" required>
+                                                <option value="">Fan </option>
+                                                <option value="0">OFF</option>
+                                                <option value="1">ON</option>                                                    
+                                            </select>
+                                        </div>
+                                        <br>
+                                        <div class="text-center">
+                                            <button id="predict" class="btn btn-primary btn-lg"><strong>Predict</strong></button>
+                                        </div>
+                                        <br><br>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-12 me-auto">
+                            <em class="text-white d-block mb-4">Where to find us?</em>
+
+                            <strong class="text-white">
+                                <i class="bi-geo-alt me-2"></i>
+                                Gachibowli,Hyderabad,Telangana 500032, India
+                            </strong>
+
+                            <ul class="social-icon mt-4">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-facebook">
+                                    </a>
+                                </li>
+    
+                                <li class="social-icon-item">
+                                    <a href="https://x.com/minthu" target="_new" class="social-icon-link bi-twitter">
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-whatsapp">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+                            <em class="text-white d-block mb-4">Contact</em>
+
+                            <p class="d-flex mb-1">
+                                <strong class="me-2">Phone:</strong>
+                                <a href="tel: 305-240-9671" class="site-footer-link">
+                                    (65) 
+                                    305 2409 671
+                                </a>
+                            </p>
+
+                            <p class="d-flex">
+                                <strong class="me-2">Email:</strong>
+
+                                <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                                    hello@smart_irrigation.co
+                                </a>
+                            </p>
+                        </div>
+
+
+                    
+
+                        <div class="col-lg-8 col-12 mt-4">
+                            <p class="copyright-text mb-0">Copyright © Smart_Irrigation 2024</p>
+                        </div>
+                </div>
+            </footer>
+            </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/vegas.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            document.getElementById("submit").onclick = function() {
+                window.location.href = "Result.html";
+            };
+        </script>
+    </body>
+</html>

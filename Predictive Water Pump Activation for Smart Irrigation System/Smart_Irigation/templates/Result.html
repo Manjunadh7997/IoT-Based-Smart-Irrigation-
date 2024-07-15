@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Barista Cafe - HTML Reservation Form</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
+            
+        <link href="static/assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="static/assets/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="static/assets/css/vegas.min.css" rel="stylesheet">
+
+        <link href="static/assets/css/tooplate-barista.css" rel="stylesheet">
+<!--
+
+Tooplate 2137 Barista
+
+https://www.tooplate.com/view/2137-barista-cafe
+
+Bootstrap 5 HTML CSS Template
+
+-->
+    </head>
+    
+    <body class="reservation-page">
+                
+            <main>
+                <nav class="navbar navbar-expand-lg">                
+                    <div class="container">
+                        <a class="navbar-brand d-flex align-items-center" href="">
+                            <img src="images/coffee-beans.png" class="navbar-brand-image img-fluid" alt="">
+                            Smart Irrigation
+                        </a>
+        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-lg-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('predict') }}">Predict</a>
+                                </li>
+                            </ul>
+
+                            
+                        </div>
+                    </div>
+                </nav>
+                
+
+                <section class="booking-section section-padding">
+                <div class="container">
+                    <div class="row">
+                        <br><br>
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div class="back_form">
+                                <div class="row">
+                                 <br><br> <br><br> <br><br> <br><br> <br><br>
+                                 <section id="statistics"  class="statistics">
+                                    <div class="container">
+                                        <div class="statistics-counter"> 
+                                            <div class="result"style="margin-left: 15%;"><br><br><br><br><br><br>
+                                                <h2 style="color: #a39c9c;margin-left: 16%;">Prediction Results </h2><br>
+                                                <h3 style="color: #d1c9bb;margin-left: 9%;"> Status of Water Pump actuator is  {{prediction}} </h3><br>
+                                                {% if result %}
+                                                
+                                                <!-- <h2 style="color:rgb(175, 163, 163);margin-left: 5%;"><B>{{ result }}</B></h2> -->
+                                                <!-- {% endif %}				 -->
+                                            </div>
+                                            
+                                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                            
+                                        </div>
+                                    </div>
+                        
+                                </section> <br><br> <br><br> <br><br> <br><br><br> <br>                                    
+                                        
+                                        
+                                            
+                                        
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+        
+
+
+                    <footer class="site-footer">
+                        <div class="container">
+                            <div class="row">
+    
+                                <div class="col-lg-4 col-12 me-auto">
+                                    <em class="text-white d-block mb-4">Where to find us?</em>
+    
+                                    <strong class="text-white">
+                                        <i class="bi-geo-alt me-2"></i>
+                                        Gachibowli,Hyderabad,Telangana 500032, India
+                                    </strong>
+    
+                                    <ul class="social-icon mt-4">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-facebook">
+                                            </a>
+                                        </li>
+            
+                                        <li class="social-icon-item">
+                                            <a href="https://x.com/minthu" target="_new" class="social-icon-link bi-twitter">
+                                            </a>
+                                        </li>
+    
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-whatsapp">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+                                    <em class="text-white d-block mb-4">Contact</em>
+    
+                                    <p class="d-flex mb-1">
+                                        <strong class="me-2">Phone:</strong>
+                                        <a href="tel: 305-240-9671" class="site-footer-link">
+                                            (65) 
+                                            305 2409 671
+                                        </a>
+                                    </p>
+    
+                                    <p class="d-flex">
+                                        <strong class="me-2">Email:</strong>
+    
+                                        <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                                            hello@smart_irrigation.co
+                                        </a>
+                                    </p>
+                                </div>
+    
+    
+                            
+    
+                                <div class="col-lg-8 col-12 mt-4">
+                                    <p class="copyright-text mb-0">Copyright © Smart_Irrigation 2024</p>
+                                </div>
+                        </div>
+                    </footer>
+            </main>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/vegas.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            document.getElementById("submit").onclick = function() {
+                window.location.href = "Result.html";
+            };
+        </script>
+
+    </body>
+</html>
