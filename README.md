@@ -13,15 +13,15 @@ Explore this Repository to get the Proactive Knowledge on What the IoT Devices a
 
 ### Standard of Procedure to Build the Machine Learning Project 
 we are going to follow the Steps :
-> Data acquired from the source
-> Data loading
-> Exploratory Data Analysis
-> Data Cleansing
-> Data Visualizations
-> Model Building
-> Evolution and performance 
-> Testing the Model 
-> saving the Model into a pickle or joblib file.
+- > Data acquired from the source
+- > Data loading
+- > Exploratory Data Analysis
+- > Data Cleansing
+- > Data Visualizations
+- > Model Building
+- > Evolution and performance 
+- > Testing the Model 
+- > saving the Model into a pickle or joblib file.
 These are the Steps to be followed for fixing the Model for Deployment.
 
 Architecture of Performing the Machine Learning Project.
