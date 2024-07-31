@@ -1,12 +1,12 @@
 # IoT-Based-Smart-Irrigation-
 Explore this Repository to get the Proactive Knowledge on What the IoT Devices are and how they work. 
-- > ## IoT Devices used for this project.
+- > ### IoT Devices used for this project.
 - There are three IoT devices used for this project they are as follows:
 > Watering Plant pump
 > Fan Actuator
 > Water Pump Actuator.
 
-- >  ## Working methodology of IoT Devices
+- >  ### Working methodology of IoT Devices
 - They work based on climatic conditions like temperature, Humidity, and Water level.
   
 ####  We aim to Predict the Working Of the Water Pump Actuator action (ON/OFF) based on the other discussed Factors above.
