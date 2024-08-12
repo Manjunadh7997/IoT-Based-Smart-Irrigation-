@@ -38,4 +38,16 @@ Architecture of Performing the Machine Learning Project.
 - Optimization
 - Deployment (Flask)
 
+![image](https://github.com/user-attachments/assets/91d68a5a-b6a4-443b-ac1a-bd2cf98ca6b7)
+![image](https://github.com/user-attachments/assets/e2c4a013-0273-4868-8c11-5c2718357c35)
+![image](https://github.com/user-attachments/assets/e84e8be8-ea6a-4c30-a15c-7101f6913c07)
+
+Provide the Values  for each Field and predict the Action of the Water Pump Actuator
+![image](https://github.com/user-attachments/assets/c6b2e045-fa49-470c-9f93-1afc3973aac8)
+
+prediction:
+![image](https://github.com/user-attachments/assets/15d167fc-4094-4aba-b597-94576b6409f5)
+
+
+
  ## For more information, please review the documentation and Jupyter Notebook file for better clarity.
